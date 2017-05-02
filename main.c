@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#include <ctype.h>
 
 int main()
 {
@@ -14,6 +16,12 @@ int main()
     //exe9();
     //exe10();
     //exe11();
+    //exe12();
+    //exe13();
+    //exe14();
+    //exe15();
+    //exe16();
+    exe17();
     return 0;
 }
 
@@ -143,4 +151,102 @@ void exe11(){
     }else{
         printf("√çmpar");
     }
+}
+
+void exe12(){
+    printf("\nExerc√≠cio 12\n");
+    int nRodas;
+
+    scanf("%d",&nRodas);
+    
+    switch(nRodas){
+    	case 4:
+    		printf("Carro");
+    		break;
+    	
+    	case 3:
+    		printf("Triciclo");
+    		break;
+    		
+    	case 2:
+    		printf("Moto");
+    		break;
+    		
+    	default:
+    		printf("VeÌculo Desconhecido");
+    		break;
+	}
+}
+
+void exe13(){
+    printf("\nExerc√≠cio 13\n");
+    int grau;
+
+    scanf("%d", &grau);
+    
+    switch(grau){
+    	case 1:
+    		printf("Doutor ");
+    	
+    	case 2:
+    		printf("Mestre ");
+    		
+    	case 3:
+    		printf("Graduado");    		
+	}
+}
+
+void exe14(){
+	printf("\nExerc√≠cio 14\n");
+    float numero;
+
+    scanf("%f", &numero);
+    
+    float raiz = sqrt(numero);
+   	float quadrado = pow(numero, 2.0);
+    
+    printf("Raiz quadrada: %f\n", raiz);
+    printf("Quadrado: %f", quadrado);
+}
+
+void exe15(){
+	printf("\nExerc√≠cio 15\n");
+    float numero;
+
+    scanf("%f", &numero);    
+    
+    float seno = sin(numero);
+    float cosseno = cos(numero);
+    float tangente = tan(numero);
+    
+    printf("Seno: %f\n", seno);
+    printf("Cosseno: %f\n", cosseno);
+    printf("Tangente: %f\n", tangente);
+}
+
+void exe16(){
+	printf("\nExerc√≠cio 16\n");
+	
+	char caractere;
+	
+	scanf("%c", &caractere);
+	
+	char maisculo = toupper(caractere);
+	printf("%c", maisculo);
+}
+
+void exe17(){
+	printf("\nExerc√≠cio 17\n");
+	
+	int numero;
+	
+	scanf("%d", &numero);
+	
+	srand((unsigned)5);
+	
+	int aleatorio = rand();	
+	numero = numero * aleatorio;
+	
+	printf("N˙mero aleatÛrio: %d\n", aleatorio);
+	printf("MultiplicaÁ„o: %d\n", numero);
 }
