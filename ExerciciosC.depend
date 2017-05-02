@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1493683526 source:/home/israel/codeblocks/ExerciciosC/ExerciciosC/main.c
+	<stdio.h>
+	<stdlib.h>
+
